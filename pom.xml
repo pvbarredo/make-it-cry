@@ -5,7 +5,7 @@
 	http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>sample</groupId>
+    <groupId>user4</groupId>
     <artifactId>make-it-cry</artifactId>
     <name>make-it-cry</name>
 
@@ -61,4 +61,17 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>a438e7fc804d-releases</name>
+            <url>http://40.83.100.63:8083/artifactory/great-company</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>a438e7fc804d-snapshots</name>
+            <url>http://40.83.100.63:8083/artifactory/great-company</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
